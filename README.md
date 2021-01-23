@@ -1,1 +1,1 @@
-# projector
+# Swanix Projector
