@@ -15,11 +15,9 @@ HTML file with external SVG:
   <title>Swanix Projector - Demo</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
   <!-- Styles & Scripts -->
-  <link href="../dist/projector.min.css" rel="stylesheet" >
-  <script src="../dist/projector.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/swanix/projector/dist/projector.css" rel="stylesheet" >
+  <script src="https://cdn.jsdelivr.net/gh/swanix/projector/dist/projector.js"></script>
 </head>
 <body>
 <!-- SVG File -->
