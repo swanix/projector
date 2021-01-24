@@ -75,9 +75,10 @@ function sass_compiler() {
 
 // JS paths
 var inputJs = [
-    "src/scripts/svg.js",
-    "src/scripts/svg.panzoom.js",
-    "src/scripts/projector.js"
+  "src/scripts/projector-version.js",
+  "src/scripts/svg.js",
+  "src/scripts/svg.panzoom.js",
+  "src/scripts/projector.js"
 ];
 var outputJs = 'dist/';
 var outputJsDocs = 'docs/dist/';
