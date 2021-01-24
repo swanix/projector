@@ -2,7 +2,7 @@
 
 ### Iframe external SVG
 
-<iframe allowfullscreen frameborder="0" style="width:780px; height:480px" src="../demo/"></iframe>
+<iframe allowfullscreen frameborder="0" style="width:780px; height:480px" src="./demo/"></iframe>
 
 HTML file with external SVG:
 
