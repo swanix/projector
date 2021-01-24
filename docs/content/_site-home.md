@@ -20,15 +20,12 @@ HTML file with external SVG:
   <!-- Styles & Scripts -->
   <link href="../dist/projector.min.css" rel="stylesheet" >
   <script src="../dist/projector.min.js"></script>
-  <!-- SVG File -->
-  <script>
-    svgFile = 'https://swanix.org/diagrams/demo/org-chart/org-chart.svg';
-  </script>
 </head>
 <body>
-<div id="canvas">
-  <button id="btn-fullscreen">⤡</button>
-</div>
+<!-- SVG File -->
+<script>
+  svgFile = 'https://swanix.org/diagrams/demo/org-chart/org-chart.svg';
+</script>
 </body>
 </html>
 ```

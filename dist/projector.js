@@ -1,5 +1,5 @@
 /*!
- * Swanix Projector - v0.1.0
+ * Swanix Projector - v0.2.0
  * https://github.com/swanix/projector
  * @license MIT
  * Based on SVG.js
@@ -11536,7 +11536,7 @@ var SVG = (function () {
  * Based on SVG.js
 */
 
-function projector() {
+function initProjector() {
 
   // Load SVG file 
   // Based on https://dev.to/lucafaggianelli/interactive-svg-js-map-2ind
@@ -11583,9 +11583,26 @@ function projector() {
       }
     }
   }
-
+  // Fullscreen action on button
   document.getElementById("btn-fullscreen").addEventListener("click", toggleFullScreen, false);
 
 }
 
-document.addEventListener("DOMContentLoaded", projector)
+// Create the UI & Canvas
+const uiTemplate = `
+<div id="canvas">
+    <button id="btn-fullscreen">⤡</button>
+</div>
+`;
+
+function createUi() {
+  let uiProjector = document.createElement('div');
+  uiProjector.id = "projector";
+  uiProjector.innerHTML = uiTemplate;
+  document.body.insertAdjacentElement("afterbegin", uiProjector);
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  createUi();
+  initProjector();
+});
