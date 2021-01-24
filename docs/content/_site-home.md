@@ -18,8 +18,8 @@ HTML file with external SVG:
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/favicon.ico">
   <!-- Styles & Scripts -->
-  <link href="../dist/projector.css" rel="stylesheet" >
-  <script src="../dist/projector.js"></script>
+  <link href="../dist/projector.min.css" rel="stylesheet" >
+  <script src="../dist/projector.min.js"></script>
   <!-- SVG File -->
   <script>
     svgFile = 'https://swanix.org/diagrams/demo/org-chart/org-chart.svg';
