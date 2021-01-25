@@ -1,6 +1,6 @@
 {
   "name": "@swanix/projector",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Viewer for SVG files",
   "main": "index.js",
   "scripts": {

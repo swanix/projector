@@ -21,8 +21,13 @@ function initProjector() {
     const canvas = SVG(image.slice(startOfSvg))
     .addTo('#canvas')
     .size('100vw', '100vh')
-    .zoom(0.1) // uses center of viewport by default
-    .panZoom({ zoomMin: 0.05, zoomMax: 1.5 })
+    .zoom(0.2) // uses center of viewport by default
+    .panZoom({ 
+      zoomFactor: 0.1,
+      zoomMin: 0.05, 
+      zoomMax: 1.5,
+      oneFingerPan: true 
+    })
 
     // Prevent click on panning
     canvas.on('panning', function (ev) {
