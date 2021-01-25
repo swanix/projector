@@ -16,7 +16,7 @@ HTML file with external SVG:
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- Styles & Scripts -->
-  <link href="https://cdn.jsdelivr.net/gh/swanix/projector@latest/dist/projector.min.css" rel="stylesheet" >
+  <link href="https://cdn.jsdelivr.net/gh/swanix/projector@latest/dist/projector.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/swanix/projector@latest/dist/projector.min.js"></script>
 </head>
 <body>
