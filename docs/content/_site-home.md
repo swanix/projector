@@ -18,8 +18,8 @@ HTML file with external SVG:
   <!-- Favicon -->
   <link rel="shortcut icon" href="https://swanix.org/assets/images/favicon.ico">
   <!-- Styles & Scripts -->
-  <link href="https://cdn.jsdelivr.net/gh/swanix/projector@latest/dist/projector.min.css" rel="stylesheet" >
-  <script src="https://cdn.jsdelivr.net/gh/swanix/projector@latest/dist/projector.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/swanix/projector@latest/dist/projector.css" rel="stylesheet" >
+  <script src="https://cdn.jsdelivr.net/gh/swanix/projector@latest/dist/projector.js"></script>
 </head>
 <body>
 <script>
