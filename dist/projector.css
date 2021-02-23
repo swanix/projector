@@ -3,31 +3,48 @@
  * https://github.com/swanix/projector
  * @license MIT
 */
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-}
-
-button {
-  padding: 6px 8px;
-  border-radius: 6px;
-  background: #FFF;
-  border: 2px solid #EDEDED;
-  outline: none;
-  cursor: pointer;
-  position: absolute;
-  font-size: 16px;
-}
-
-button:hover {
-  background: #FAFAFA;
+  font-family: sans-serif;
 }
 
 :fullscreen {
   background: #FFF;
 }
 
-#canvas {
-  background: #F7F7F7;
+.button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #FFF;
+  border: 2px solid #EDEDED;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+}
+
+.button:hover {
+  background: #FAFAFA;
+}
+
+.file-title {
+  padding: 6px 16px;
+  border-radius: 6px;
+  background: #FFF;
+  border: 2px solid #EDEDED;
+  position: absolute;
+  font-size: 16px;
+  height: 28px;
+  line-height: 28px;
+  left: 6px;
+  top: 6px;
+}
+
+.fullscreen {
+  right: 6px;
+  top: 6px;
 }

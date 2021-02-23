@@ -1,5 +1,5 @@
 /*!
- * Swanix Projector - v0.2.1
+ * Swanix Projector - v0.2.2
  * https://github.com/swanix/projector
  * @license MIT
  * Based on SVG.js
@@ -11540,26 +11540,18 @@ function initProjector() {
 
   // Load SVG file 
   // Based on https://dev.to/lucafaggianelli/interactive-svg-js-map-2ind
-  
   fetch(svgFile)
-  // Get the raw text of SVG file as a string
+  // SVG text as a string
   .then(response => response.text())
   .then((image) => {
-    // Workaround for a strange behavior (a bug?) of svg.js 
     let startOfSvg = image.indexOf('<svg')
     startOfSvg = startOfSvg >= 0 ? startOfSvg : 0
     // Draw SVG file
-    const canvas = SVG(image.slice(startOfSvg))
-    .addTo('#canvas')
-    .size('100vw', '100vh')
-    .zoom(0.2) // uses center of viewport by default
-    .panZoom({ 
-      zoomFactor: 0.1,
-      zoomMin: 0.05, 
-      zoomMax: 1.5,
-      oneFingerPan: true 
-    })
-
+    var canvas = SVG(image.slice(startOfSvg));
+    canvas.addTo('#canvas')
+    canvas.size('100vw', '100vh')
+    canvas.zoom(svgZoom)
+    canvas.panZoom(svgPanZoom)
     // Prevent click on panning
     canvas.on('panning', function (ev) {
       let links = document.getElementsByTagName("a");
@@ -11575,10 +11567,8 @@ function initProjector() {
       }
     })
   })
-
   // Fullscreen Mode
   // Based on https://developer.mozilla.org/es/docs/Web/API/Fullscreen_API
-
   function toggleFullScreen() {
     if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen();
@@ -11590,13 +11580,15 @@ function initProjector() {
   }
   // Fullscreen action on button
   document.getElementById("btn-fullscreen").addEventListener("click", toggleFullScreen, false);
-
 }
 
 // Create the UI & Canvas
+var pageTitle = document.title;
+
 const uiTemplate = `
 <div id="canvas">
-    <button id="btn-fullscreen">⤡</button>
+  <div class="file-title">${pageTitle}</div>
+  <button class="button fullscreen" id="btn-fullscreen">⤢</button>
 </div>
 `;
 

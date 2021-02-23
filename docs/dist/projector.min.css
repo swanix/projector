@@ -2,4 +2,4 @@
  * Swanix Projector
  * https://github.com/swanix/projector
  * @license MIT
-*/body,html{padding:0;margin:0;overflow:hidden}button{padding:6px 8px;border-radius:6px;background:#fff;border:2px solid #ededed;outline:0;cursor:pointer;position:absolute;font-size:16px}button:hover{background:#fafafa}:fullscreen{background:#fff}#canvas{background:#f7f7f7}
+*/body,html{padding:0;margin:0;overflow:hidden;font-family:sans-serif}:fullscreen{background:#fff}.button{padding:6px 12px;border-radius:6px;background:#fff;border:2px solid #ededed;outline:0;cursor:pointer;position:absolute;right:0;font-size:16px}.button:hover{background:#fafafa}.file-title{padding:6px 16px;border-radius:6px;background:#fff;border:2px solid #ededed;position:absolute;font-size:16px;height:28px;line-height:28px;left:6px;top:6px}.fullscreen{right:6px;top:6px}
