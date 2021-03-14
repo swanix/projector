@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-// Swanix Projector
+// Swanix - Tool Projector
 // by Sebastian Serna
 // (c) 2020-present
 //-----------------------------------------------------
@@ -64,7 +64,7 @@ function sass_compiler() {
     .pipe(dest(outputSass))
     .pipe(dest(outputDocs))
     .pipe(cleanCSS())
-    .pipe(rename('projector.min.css'))
+    .pipe(rename('tool-projector.min.css'))
     .pipe(dest(outputSass))
     .pipe(dest(outputDocs));
 }
@@ -75,10 +75,10 @@ function sass_compiler() {
 
 // JS paths
 var inputJs = [
-  "src/scripts/projector-version.js",
+  "src/scripts/tool-projector-version.js",
   "src/scripts/svg.js",
   "src/scripts/svg.panzoom.js",
-  "src/scripts/projector.js"
+  "src/scripts/tool-projector.js"
 ];
 var outputJs = 'dist/';
 var outputJsDocs = 'docs/dist/';
@@ -86,10 +86,10 @@ var outputJsDocs = 'docs/dist/';
 function js_concat() {
   return src(inputJs)
     .pipe(plumber())
-    .pipe(concat('projector.js'))
+    .pipe(concat('tool-projector.js'))
     .pipe(dest(outputJs))
     .pipe(dest(outputJsDocs))
-    .pipe(rename('projector.min.js'))
+    .pipe(rename('tool-projector.min.js'))
     .pipe(terser())
     .pipe(dest(outputJs))
     .pipe(dest(outputJsDocs));

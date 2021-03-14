@@ -1,6 +1,6 @@
 {
-  "name": "@swanix/projector",
-  "version": "0.2.2",
+  "name": "@swanix/tool-projector",
+  "version": "0.3.0",
   "description": "Viewer for SVG files",
   "main": "index.js",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/swanix/projector"
+    "url": "git+https://github.com/swanix/tool-projector"
   },
   "author": "Sebastian Serna <jsebastianserna@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/swanix/projector/issues"
+    "url": "https://github.com/swanix/tool-projector/issues"
   },
-  "homepage": "https://swanix.org/projector",
+  "homepage": "https://swanix.org/tool-projector",
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 2.14.2"

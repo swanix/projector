@@ -1,12 +1,13 @@
 /*!
- * Swanix Projector
- * https://github.com/swanix/projector
+ * Swanix - Tool Projector
+ * https://github.com/swanix/tool-projector
  * @license MIT
 */
-html,
-body {
-  padding: 0;
-  margin: 0;
+  
+html, 
+body { 
+  padding: 0; 
+  margin: 0; 
   overflow: hidden;
   font-family: sans-serif;
 }
@@ -41,10 +42,10 @@ body {
   height: 28px;
   line-height: 28px;
   left: 6px;
-  top: 6px;
+  top: 6px
 }
 
 .fullscreen {
   right: 6px;
-  top: 6px;
+  top: 6px
 }

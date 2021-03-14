@@ -1,10 +1,10 @@
 <p align="center">
-    <img alt="Swanix" title="Swanix Palettes" src="https://swanix.org/assets/images/apple-touch-icon.png">
+    <img alt="Swanix" title="Swanix - Tool Projector" src="https://swanix.org/assets/images/apple-touch-icon.png">
 </p>
-<h1 align="center"> Swanix Projector </h1>
+<h1 align="center"> Swanix - Tool Projector </h1>
 <p align="center">
     Viewer for SVG files <br>
-    https://swanix.org/projector
+    https://swanix.org/tool-projector
 </p>
 
 <p align="center">

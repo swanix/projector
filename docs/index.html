@@ -9,14 +9,14 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="https://swanix.org/assets/images/favicon.ico">
   <!-- Styles -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/swanix/docsix/dist/docsix.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/swanix/tool-docs@latest/dist/tool-docs.css" rel="stylesheet" >
 </head>
 <body>
 <div id="app"></div>
 <script>
   window.$docsify = {
-    name: "Projector",
-    themeColor: '#000',
+    name: "Tool Projector",
+    //themeColor: '#000',
     basePath: 'content/',
     homepage: '_site-home.md',
     loadSidebar: '_site-menu.md',
@@ -25,7 +25,8 @@
   };
 </script>
 
-<!-- Docsify -->
-<script src="https://cdn.jsdelivr.net/gh/swanix/docsix/dist/docsix.min.js"></script>
+<!-- Tool Docs -->
+<script src="menu.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/swanix/tool-docs@latest/dist/tool-docs.js"></script>
 </body>
 </html>
